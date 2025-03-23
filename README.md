@@ -167,9 +167,6 @@ Deschiți fișierul Dockerfile și modificatil:
     # copy the supervisor configuration file
     COPY files/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 
-    # copy the configuration file for wordpress from files/ directory
-    COPY files/wp-config.php /var/www/html/wordpress/wp-config.php
-
     # create mysql socket directory
     RUN mkdir /var/run/mysqld && chown mysql:mysql /var/run/mysqld
 
